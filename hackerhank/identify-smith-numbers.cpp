@@ -23,6 +23,7 @@ int getPrimesDigitsSum(int iNumber, vector< int >& iPrimes) {
 
 	int iAnswer = 0;
 	int iI;
+	int iDivisors = 0;
 
 	for (iI = 0; ((iNumber > 1) && (iI < iPrimes.size())); iI++) {
 
@@ -30,15 +31,18 @@ int getPrimesDigitsSum(int iNumber, vector< int >& iPrimes) {
 
 			iAnswer += getDigitsSum(iPrimes[iI]);
 			iNumber /= iPrimes[iI];
+			iDivisors++;
 
 		}
 
 	}
 
-	if (iNumber > 1)
+	if (iNumber > 1) {
 		iAnswer += getDigitsSum(iNumber);
+		iDivisors++;
+	}
 
-	return iAnswer;
+	return (iDivisors == 1) ? 0 : iAnswer;
 
 }
 
