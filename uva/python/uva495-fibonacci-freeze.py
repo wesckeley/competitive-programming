@@ -6,7 +6,7 @@ for i in range(2,5001):
 while True:
     try:
         i = int(input())
-        print(fib[i])
+        print("The Fibonacci number for {0} is {1}".format(i,fib[i]))
     except EOFError:
         break
         
