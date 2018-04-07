@@ -23,6 +23,7 @@ while(True):
         i = int(input())
     except:
         break
+        
     i -= 1
     j = pallet_container_map[i]
     k = len(container[j]) - 1
