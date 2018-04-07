@@ -25,8 +25,8 @@ while(True):
         break
     i -= 1
     j = pallet_container_map[i]
-    k = len(container[j])-1
-    print( "Pallet {0} Container {1}".format(i + 1, j + 1), end = '')
+    k = len(container[j]) - 1
+    print("Pallet {0} Container {1}".format(i + 1, j + 1), end = '')
     
     if container[j][k] == i:
         print(" TOPO")
@@ -35,4 +35,4 @@ while(True):
         while(container[j][k] != i):
             print(" {0}".format(container[j][k] + 1), end = '')
             k -= 1
-        print( "")
+        print("")
