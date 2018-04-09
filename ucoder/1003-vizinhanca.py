@@ -1,3 +1,20 @@
+'''
+6 10
+0 0 0 0 0 D
+0 0 0 0 0 0
+0 A 0 A 0 0
+0 0 B 0 D 0
+0 E B 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+D 0 0 0 0 A
+0 C 0 A 0 0
+25 2
+D 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A 0
+0 0 0 A 0 B 0 B 0 0 0 0 0 0 0 0 A E 0 E 0 0 0 0 0
+'''
+
 f = {'0': 0, 'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5}
 is_valid = [
     [True,True,True,True,True,True],
@@ -31,15 +48,13 @@ while(True):
     while i < row_count and answer == True:
         j = 0
         while j < col_count and answer == True:
-            if 1 <= mapping[i][j] and mapping[i][j] <= 2:
+            #melhorar
+            if 1 <= mapping[i][j] and mapping[i][j] <= 4:
                 for k in range(4):
                     _i = i + dx[k]
                     _j = j + dy[k]
-                    _i += row_count
-                    _j += col_count
-                    _i %= row_count
-                    _j %= col_count                    
-                    answer &= is_valid[mapping[i][j]][mapping[_i][_j]]
+                    if 0 <= _i and 0 <= _j and _i < row_count and _j < col_count:
+                        answer &= is_valid[mapping[i][j]][mapping[_i][_j]]
             j += 1
         i += 1
 
