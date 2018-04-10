@@ -1,3 +1,10 @@
+# Ver:
+# Fractals for the Classroom: Part One Introduction to Fractals and Chaos
+# 3.2 Geometric Series and the Koch Curve
+
+# Limite correto:
+# 0 <= n <= 16
+
 import math
 
 four_nines = [1]
@@ -17,5 +24,3 @@ while(True):
     area *= a0
     area /= 5
     print("{0:.8f}".format(area))
-
-
