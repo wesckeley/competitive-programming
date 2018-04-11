@@ -13,5 +13,3 @@ max_distance = max(max_distance,positions[0] - 1)
 max_distance = max(max_distance,length - positions[len(positions)-1])
 
 print(max_distance)
-
-
