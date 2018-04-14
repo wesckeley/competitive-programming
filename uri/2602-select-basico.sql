@@ -22,7 +22,9 @@ VALUES
 
 -- Begin of the submitted code
 
-SELECT name FROM customers WHERE state = 'RS';
+SELECT name 
+FROM customers 
+WHERE state = 'RS';
 
 -- End of the submitted code
 
