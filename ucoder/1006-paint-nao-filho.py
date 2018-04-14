@@ -1,7 +1,7 @@
 dx = [1,0,-1,0]
 dy = [0,1,0,-1]
 
-def dfs(mapping,x,y,row_count,col_count):
+def bfs(mapping,x,y,row_count,col_count):
 
     value = mapping[x][y]
     mapping[x][y] = -value
@@ -45,4 +45,4 @@ while(True):
     x = int(line[0]) - 1
     y = int(line[1]) - 1
     
-    print(dfs(mapping,x,y,row_count,col_count))
+    print(bfs(mapping,x,y,row_count,col_count))

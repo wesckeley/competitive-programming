@@ -42,5 +42,11 @@ while(True):
     data.append(person(line[0],f[line[1]],int(line[2]),f[line[3]],f[line[4]],f[line[5]]))
 
 data.sort()
+
 i = 1
-print(data[0])
+print("{0} {1}".format(i, data[0]))
+
+for j in range(1,len(data)):
+    if data[j] != data[j-1]:
+        i += 1
+    print("{0} {1}".format(i, data[j]))
