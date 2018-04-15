@@ -1,8 +1,3 @@
---- URI Online Judge SQL
---- Copyright URI Online Judge
---- www.urionlinejudge.com.br
---- Problem 2606
-
 CREATE TABLE categories (
   id numeric PRIMARY KEY,
   name varchar

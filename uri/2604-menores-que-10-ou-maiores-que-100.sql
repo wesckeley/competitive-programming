@@ -1,8 +1,3 @@
---- URI Online Judge SQL
---- Copyright URI Online Judge
---- www.urionlinejudge.com.br
---- Problem 2604
-
 CREATE TABLE products (
   id NUMERIC PRIMARY KEY,
   name CHARACTER VARYING (255),
