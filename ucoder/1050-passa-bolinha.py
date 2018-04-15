@@ -6,8 +6,7 @@ def bfs(i,j,n):
 
     answer = 0
     q = [[i,j]]
-    mapping[i][j][1] = True
-    
+    mapping[i][j][1] = True    
 
     while len(q) > 0:
 
