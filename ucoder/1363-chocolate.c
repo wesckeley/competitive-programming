@@ -1,3 +1,6 @@
+// WA
+// https://gitlab.com/pufe/elixir-day-2/blob/master/chocolate/input
+
 #include <stdio.h>
 
 #define MAX 1000

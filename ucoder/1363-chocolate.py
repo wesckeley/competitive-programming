@@ -1,4 +1,5 @@
 # WA
+# https://gitlab.com/pufe/elixir-day-2/blob/master/chocolate/input
 
 import ctypes
 
